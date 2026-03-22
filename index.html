@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Vuppu Reddy Kalyan - Software Developer and AI & ML Enthusiast" />
+  <title>Vuppu Reddy Kalyan | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/build/email.min.js"></script>
+</head>
+<body class="is-loading">
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-core">
+      <p class="preloader-logo">VRK</p>
+      <p class="preloader-text">Crafting premium experiences...</p>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container">
+      <a href="#top" class="brand" aria-label="Go to top">VRK</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle light mode">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="kicker">Software Developer Portfolio</p>
+          <h1>Vuppu Reddy Kalyan</h1>
+          <h2><span class="typing" id="typingText"></span><span class="caret" aria-hidden="true"></span></h2>
+          <p class="tagline">
+            Enthusiastic and self-motivated individual turning ideas into scalable software solutions.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="assets/vuppu_Reddy_Kalyan_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <button class="btn btn-secondary" type="button" id="downloadResumeBtn">Download to Device</button>
+          </div>
+          <div class="hero-meta">
+            <span>Tirupati, Andhra Pradesh, India</span>
+            <a href="mailto:vuppureddykalyan@gmail.com">vuppureddykalyan@gmail.com</a>
+            <a href="tel:6304474738">6304474738</a>
+          </div>
+        </div>
+        <div class="hero-card reveal">
+          <img class="profile-photo" src="assets/Mypic.jpeg" alt="Portrait of Vuppu Reddy Kalyan" />
+          <p class="hero-card-title">Core Snapshot</p>
+          <ul>
+            <li>AI & ML focused engineering student with 9.0 CGPA</li>
+            <li>Hands-on with deep learning, full stack Java, and analytics</li>
+            <li>Award-winning performer with published research</li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/vuppureddykalyan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://github.com/Kalyan31104" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://leetcode.com/u/Kalyan31104/" target="_blank" rel="noopener noreferrer">LeetCode</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container reveal">
+        <h3 class="section-title">About</h3>
+        <p class="section-intro">
+          I am a Software Developer and AI & ML enthusiast focused on turning complex ideas into practical products.
+          My work blends strong fundamentals in data structures and system design with modern machine learning,
+          resulting in scalable, measurable, and user-focused solutions.
+        </p>
+        <div class="info-grid">
+          <article class="glass-card">
+            <h4>Education</h4>
+            <p>B.E in Computer Science and Engineering (AI & ML)</p>
+            <p>Vel Tech High Tech Dr Rangarajan Dr Sakunthala Engineering College</p>
+            <p>Graduating 2026 | CGPA: 9.0</p>
+          </article>
+          <article class="glass-card">
+            <h4>Strengths</h4>
+            <p>Teamwork, Adaptability, Problem Solving, Time Management</p>
+            <h4 class="subhead">Interests</h4>
+            <p>Coding, Learning New Things, History & Facts</p>
+            <h4 class="subhead">Languages</h4>
+            <p>English, Telugu, Tamil, Hindi</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container reveal">
+        <h3 class="section-title">Education </h3>
+        <p class="section-intro">
+          Academic journey in descending order from current degree to foundational schooling.
+        </p>
+        <div class="education-timeline">
+          <article class="edu-item glass-card">
+            <div class="edu-head">
+              <span class="edu-year">2022-2026</span>
+              <h4>B.E in Computer Science and Engineering (AI & ML)</h4>
+            </div>
+            <p>Vel Tech High Tech Dr Rangarajan Dr Sakunthala Engineering College | CGPA: 9.0</p>
+            <button class="btn btn-secondary edu-toggle" type="button" aria-expanded="false">View More</button>
+            <div class="edu-more" hidden>
+              <p>Focused on AI/ML systems, deep learning projects, and scalable software engineering practices.</p>
+              <p>Awards during degree:</p>
+              <ul>
+                <li>Vel Ratna Award (Highest GPA in branch)</li>
+                <li>Best Innovation Award</li>
+                <li>2nd Prize in Science Day</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="edu-item glass-card">
+            <div class="edu-head">
+              <span class="edu-year">2020-2022</span>
+              <h4>Intermediate (12th Grade)</h4>
+            </div>
+            <p>Sri Chaitanya Junior College | Score: 92%</p>
+            <button class="btn btn-secondary edu-toggle" type="button" aria-expanded="false">View More</button>
+            <div class="edu-more" hidden>
+              <p>Subjects: Maths, Physics, Chemistry, English, Sanskrit.</p>
+            </div>
+          </article>
+
+          <article class="edu-item glass-card">
+            <div class="edu-head">
+              <span class="edu-year">2019-2020</span>
+              <h4>Secondary School (10th Standard)</h4>
+            </div>
+            <p>Prasanna Bharathi High School | Score: 92.6%</p>
+            <button class="btn btn-secondary edu-toggle" type="button" aria-expanded="false">View More</button>
+            <div class="edu-more" hidden>
+              <p>Subjects: Telugu, Hindi, Maths, Physics, Biology, English, Sanskrit, Social.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container reveal">
+        <h3 class="section-title">Skills</h3>
+        <p class="section-intro">
+          Explore by category to quickly scan core technical strengths.
+        </p>
+
+        <div class="skills-filter" role="tablist" aria-label="Filter skills by category">
+          <button class="skill-filter active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="skill-filter" type="button" data-filter="languages" role="tab" aria-selected="false">Languages</button>
+          <button class="skill-filter" type="button" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
+          <button class="skill-filter" type="button" data-filter="backend" role="tab" aria-selected="false">Backend & DB</button>
+          <button class="skill-filter" type="button" data-filter="tools" role="tab" aria-selected="false">Tools</button>
+          <button class="skill-filter" type="button" data-filter="concepts" role="tab" aria-selected="false">Concepts</button>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid">
+          <article class="skill-card glass-card" data-category="languages">
+            <div class="skill-top">
+              <h4>Java</h4>
+            </div>
+            <p>OOP-driven app design and backend implementation.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="languages">
+            <div class="skill-top">
+              <h4>Python</h4>
+            </div>
+            <p>Machine learning workflows, data handling, and model experimentation.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="frontend">
+            <div class="skill-top">
+              <h4>HTML, CSS, JavaScript</h4>
+            </div>
+            <p>Responsive UI architecture, interaction design, and polished web experiences.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="frontend">
+            <div class="skill-top">
+              <h4>React</h4>
+            </div>
+            <p>Component-oriented development and maintainable frontend composition.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="backend">
+            <div class="skill-top">
+              <h4>Spring & Spring Boot</h4>
+            </div>
+            <p>REST service design, layered architecture, and scalable API development.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="backend">
+            <div class="skill-top">
+              <h4>MS Server & MySQL</h4>
+            </div>
+            <p>Schema design, query optimization, and reliable data persistence.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="tools">
+            <div class="skill-top">
+              <h4>Git & VS Code</h4>
+            </div>
+            <p>Version-controlled workflows and fast development iteration.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="concepts">
+            <div class="skill-top">
+              <h4>Core CS Concepts</h4>
+            </div>
+            <p>OOP, DBMS, Computer Networks, and Data Structures applied in real projects.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container reveal">
+        <h3 class="section-title">Featured Projects</h3>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card-content">
+              <h4>Wine Oracle: A Clandestine Journey into Quality Prediction with Neural Alchemy</h4>
+              <p>
+                Engineered a hybrid MC-CNN + MLP pipeline that outperformed traditional baselines in wine quality
+                prediction, with architecture leadership from model design through core implementation.
+              </p>
+              <p class="stack">TensorFlow, Scikit-learn, Deep Learning</p>
+              <button class="btn btn-secondary project-toggle" type="button" aria-expanded="false">Open Details</button>
+            </div>
+            <div class="project-overlay">
+              <p>Published in REST Publications with measurable model accuracy improvements.</p>
+              <a class="btn btn-primary" href="https://github.com/Kalyan31104/WineQualityPrediction" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-content">
+              <h4>Enhanced Image Processing for Medicinal Plant Identification</h4>
+              <p>
+                Built and optimized a hybrid CNN + Vision Transformer classifier using Hugging Face datasets,
+                combining local and global feature extraction for robust multi-class recognition.
+              </p>
+              <p class="stack">Python, CNN, Vision Transformer, Hugging Face</p>
+              <button class="btn btn-secondary project-toggle" type="button" aria-expanded="false">Open Details</button>
+            </div>
+            <div class="project-overlay">
+              <p>Led model development lifecycle and optimization for higher classification performance.</p>
+              <a class="btn btn-primary" href="https://github.com/Kalyan31104/Medicinal_Image_Classification" target="_blank" rel="noopener noreferrer">View GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-content">
+              <h4>Automated Accountability System for Daily Metric Submission</h4>
+              <p>
+                Developed an accountability workflow with real-time reminders and performance dashboards,
+                reducing manual reporting overhead while improving submission consistency and visibility.
+              </p>
+              <p class="stack">JavaScript, Dashboarding, Alert Automation</p>
+              <button class="btn btn-secondary project-toggle" type="button" aria-expanded="false">Open Details</button>
+            </div>
+            <div class="project-overlay">
+              <p>Contributed to solution design, feature engineering, and user-centric monitoring flows.</p>
+              <a class="btn btn-secondary" href="#contact">Discuss Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="container reveal">
+        <h3 class="section-title">Achievements & Highlights</h3>
+        <div class="stats-grid">
+          <article class="stat glass-card">
+            <p class="counter" data-target="9">0</p>
+            <p>CGPA</p>
+          </article>
+          <article class="stat glass-card">
+            <p class="counter" data-target="3">0</p>
+            <p>Major Awards</p>
+          </article>
+          <article class="stat glass-card">
+            <p class="counter" data-target="3">0</p>
+            <p>Certifications</p>
+          </article>
+          <article class="stat glass-card">
+            <p class="counter" data-target="1">0</p>
+            <p>Research Publication</p>
+          </article>
+        </div>
+        <div class="achievements-grid">
+          <article class="glass-card">
+            <h4>Certifications</h4>
+            <ul>
+              <li>Wipro Java Full Stack</li>
+              <li>NPTEL Joy of Computing Using Python (Elite Silver)</li>
+              <li>NVIDIA Fundamentals of Deep Learning</li>
+            </ul>
+          </article>
+          <article class="glass-card">
+            <h4>Awards</h4>
+            <ul>
+              <li>Vel Ratna Award (Highest GPA in branch)</li>
+              <li>Best Innovation Award</li>
+              <li>2nd Prize in Science Day</li>
+            </ul>
+          </article>
+          <article class="glass-card">
+            <h4>Publication</h4>
+            <p>Journal of Data Acquisition and Artificial Intelligence</p>
+            <a href="https://doi.org/10.46632/jdaai/3/2/13" target="_blank" rel="noopener noreferrer">View DOI</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container reveal">
+        <h3 class="section-title">Experience</h3>
+        <article class="timeline-item glass-card">
+          <p class="timeline-role">Intern - NSIC (National Small Industries Corporation)</p>
+          <p>
+            Worked on Python for Data Science and gained practical exposure to data analysis,
+            visualization workflows, and machine learning implementation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container reveal">
+        <h3 class="section-title">Contact</h3>
+        <div class="contact-grid">
+          <article class="glass-card">
+            <h4>Let's build something meaningful.</h4>
+            <p>Open to internships, collaboration, and software engineering opportunities.</p>
+            <ul class="contact-list">
+              <li><a href="mailto:vuppureddykalyan@gmail.com">vuppureddykalyan@gmail.com</a></li>
+              <li><a href="tel:6304474738">+91 6304474738</a></li>
+              <li><a href="https://www.linkedin.com/in/vuppureddykalyan/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/Kalyan31104" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://leetcode.com/u/Kalyan31104/" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+            </ul>
+          </article>
+          <form class="glass-card contact-form" id="contactForm">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              Message
+              <textarea rows="4" name="message" placeholder="Your message" required></textarea>
+            </label>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <button class="btn btn-secondary" type="button" id="openMailAppBtn">Open Mail App (Fallback)</button>
+            <p id="formStatus" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Vuppu Reddy Kalyan. Crafted with intent and clean code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
