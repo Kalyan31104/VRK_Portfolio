@@ -258,7 +258,7 @@ projectToggles.forEach((button) => {
 if (downloadResumeBtn) {
   downloadResumeBtn.addEventListener("click", async () => {
     try {
-      const response = await fetch("assets/vuppu_Reddy_Kalyan_Resume.pdf");
+      const response = await fetch("assets/vuppu_Reddy_Kalyan_Resume.pdf.pdf");
       if (!response.ok) {
         throw new Error("Resume file is not available right now.");
       }
@@ -267,7 +267,7 @@ if (downloadResumeBtn) {
       const fileUrl = URL.createObjectURL(blob);
       const tempLink = document.createElement("a");
       tempLink.href = fileUrl;
-      tempLink.download = "Vuppu_Reddy_Kalyan_Resume.pdf";
+      tempLink.download = "vuppu_Reddy_Kalyan_Resume.pdf.pdf";
       document.body.appendChild(tempLink);
       tempLink.click();
       tempLink.remove();
