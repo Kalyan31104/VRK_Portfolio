@@ -258,7 +258,9 @@ projectToggles.forEach((button) => {
 if (downloadResumeBtn) {
   downloadResumeBtn.addEventListener("click", async () => {
     try {
-      const response = await fetch("assets/vuppu_Reddy_Kalyan_Resume.pdf.pdf");
+      const response = await fetch("assets/vuppu_Reddy_Kalyan_Resume.pdf.pdf?v=20260704", {
+        cache: "no-store"
+      });
       if (!response.ok) {
         throw new Error("Resume file is not available right now.");
       }

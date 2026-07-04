@@ -55,7 +55,7 @@
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects">View Projects</a>
-            <a class="btn btn-secondary" href="assets/vuppu_Reddy_Kalyan_Resume.pdf.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+            <a class="btn btn-secondary" href="assets/vuppu_Reddy_Kalyan_Resume.pdf.pdf?v=20260704" target="_blank" rel="noopener noreferrer">View Resume</a>
             <button class="btn btn-secondary" type="button" id="downloadResumeBtn">Download to Device</button>
           </div>
           <div class="hero-meta">
@@ -164,14 +164,26 @@
       <div class="container reveal">
         <h3 class="section-title">Skills</h3>
         <p class="section-intro">
-          Explore by category to quickly scan core technical strengths.
+          Core technical strengths grouped for quick review and resume-style scanning.
         </p>
+
+        <article class="glass-card" style="margin-bottom: 1.25rem;">
+          <h4>Azure Data Engineering</h4>
+          <p>
+            End-to-end retail analytics pipeline development on Azure with ADF, Databricks, ADLS Gen2,
+            Azure SQL Database, PySpark, Delta Lake, Git, and GitHub.
+          </p>
+          <p class="stack">Metadata-Driven ETL, Medallion Architecture, Incremental Loading, Data Validation, Data Cleansing, SCD Type 1/2/3</p>
+        </article>
 
         <div class="skills-filter" role="tablist" aria-label="Filter skills by category">
           <button class="skill-filter active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
           <button class="skill-filter" type="button" data-filter="languages" role="tab" aria-selected="false">Languages</button>
           <button class="skill-filter" type="button" data-filter="frontend" role="tab" aria-selected="false">Frontend</button>
           <button class="skill-filter" type="button" data-filter="backend" role="tab" aria-selected="false">Backend & DB</button>
+          <button class="skill-filter" type="button" data-filter="cloud" role="tab" aria-selected="false">Cloud</button>
+          <button class="skill-filter" type="button" data-filter="data-engineering" role="tab" aria-selected="false">Data Engineering</button>
+          <button class="skill-filter" type="button" data-filter="databases" role="tab" aria-selected="false">Databases</button>
           <button class="skill-filter" type="button" data-filter="tools" role="tab" aria-selected="false">Tools</button>
           <button class="skill-filter" type="button" data-filter="concepts" role="tab" aria-selected="false">Concepts</button>
         </div>
@@ -181,56 +193,98 @@
             <div class="skill-top">
               <h4>Java</h4>
             </div>
-            <p>OOP-driven app design and backend implementation.</p>
+            <p>Object-oriented application design, backend logic, and structured problem solving.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="languages">
             <div class="skill-top">
               <h4>Python</h4>
             </div>
-            <p>Machine learning workflows, data handling, and model experimentation.</p>
+            <p>Machine learning, data processing, automation, and pipeline scripting.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="frontend">
             <div class="skill-top">
               <h4>HTML, CSS, JavaScript</h4>
             </div>
-            <p>Responsive UI architecture, interaction design, and polished web experiences.</p>
+            <p>Responsive UI development, interaction design, and client-side scripting.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="frontend">
             <div class="skill-top">
               <h4>React</h4>
             </div>
-            <p>Component-oriented development and maintainable frontend composition.</p>
+            <p>Component-based frontend development and reusable UI composition.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="backend">
             <div class="skill-top">
               <h4>Spring & Spring Boot</h4>
             </div>
-            <p>REST service design, layered architecture, and scalable API development.</p>
+            <p>REST APIs, layered architecture, and scalable Java service development.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="backend">
             <div class="skill-top">
               <h4>MS Server & MySQL</h4>
             </div>
-            <p>Schema design, query optimization, and reliable data persistence.</p>
+            <p>Relational schema design, SQL querying, and reliable data persistence.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="cloud">
+            <div class="skill-top">
+              <h4>Microsoft Azure</h4>
+            </div>
+            <p>Cloud data platforms, storage, orchestration, and analytics services.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="cloud">
+            <div class="skill-top">
+              <h4>ADF, Databricks, ADLS Gen2</h4>
+            </div>
+            <p>Pipeline orchestration, distributed processing, and scalable data lake ingestion.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="data-engineering">
+            <div class="skill-top">
+              <h4>PySpark & Delta Lake</h4>
+            </div>
+            <p>Metadata-driven ETL, incremental processing, and lakehouse transformations.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="data-engineering">
+            <div class="skill-top">
+              <h4>Medallion Architecture</h4>
+            </div>
+            <p>Bronze, Silver, and Gold layer design for structured analytics pipelines.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="databases">
+            <div class="skill-top">
+              <h4>Azure SQL Database</h4>
+            </div>
+            <p>Cloud database publishing and curated reporting layer delivery.</p>
+          </article>
+
+          <article class="skill-card glass-card" data-category="databases">
+            <div class="skill-top">
+              <h4>Microsoft SQL Server, MongoDB</h4>
+            </div>
+            <p>Relational and NoSQL data modeling for transactional and analytical use cases.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="tools">
             <div class="skill-top">
               <h4>Git & VS Code</h4>
             </div>
-            <p>Version-controlled workflows and fast development iteration.</p>
+            <p>Version control, collaboration, and fast development iteration.</p>
           </article>
 
           <article class="skill-card glass-card" data-category="concepts">
             <div class="skill-top">
               <h4>Core CS Concepts</h4>
             </div>
-            <p>OOP, DBMS, Computer Networks, and Data Structures applied in real projects.</p>
+            <p>OOP, DBMS, Computer Networks, and Data Structures applied in projects.</p>
           </article>
         </div>
       </div>
@@ -240,6 +294,23 @@
       <div class="container reveal">
         <h3 class="section-title">Featured Projects</h3>
         <div class="project-grid">
+          <article class="project-card">
+            <div class="project-card-content">
+              <h4>Enterprise Retail Analytics on Azure</h4>
+              <p>
+                Built an end-to-end Azure data engineering solution for retail ingestion, transformation, and
+                curated reporting using a metadata-driven ETL framework.
+              </p>
+              <p class="stack">Azure Data Factory, Azure Databricks, ADLS Gen2, Azure SQL Database, PySpark, Delta Lake, Git, GitHub</p>
+              <button class="btn btn-secondary project-toggle" type="button" aria-expanded="false">Open Details</button>
+            </div>
+            <div class="project-overlay">
+              <p>Implemented Medallion Architecture, incremental loading, data validation, cleansing, and SCD Type 1/2/3 handling.</p>
+              <a class="btn btn-primary" href="https://github.com/Kalyan31104/retail-data" target="_blank" rel="noopener noreferrer">View GitHub</a>
+              <a class="btn btn-secondary" href="#contact">Discuss Project</a>
+            </div>
+          </article>
+
           <article class="project-card">
             <div class="project-card-content">
               <h4>Wine Oracle: A Clandestine Journey into Quality Prediction with Neural Alchemy</h4>
