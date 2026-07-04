@@ -37,7 +37,7 @@ Visit: http://localhost:3000
 - To enable SMTP sending, edit .env with your Gmail credentials
 
 ### Issue: Resume download not working
-- Verify file exists: Check `assets/vuppu_Reddy_Kalyan_Resume.pdf`
+- Verify file exists: Check `assets/vuppu_Reddy_Kalyan_Resume_20260704.pdf`
 - Check browser console for errors (F12)
 
 ### Issue: Portfolio looks broken or unstyled

@@ -6,7 +6,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 const app = express();
-const PORT = Number(process.env.PORT || 3000);
+const START_PORT = Number(process.env.PORT || 3000);
+const MAX_PORT_ATTEMPTS = 10;
 
 app.use(express.json({ limit: "1mb" }));
 app.use(express.static(__dirname));
@@ -89,7 +90,22 @@ app.get("*", (_req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Portfolio server running on http://localhost:${PORT}`);
-});
+function startServer(port, attempt = 0) {
+  const server = app.listen(port, () => {
+    // eslint-disable-next-line no-console
+    console.log(`Portfolio server running on http://localhost:${port}`);
+  });
+
+  server.on("error", (error) => {
+    if (error.code === "EADDRINUSE" && attempt < MAX_PORT_ATTEMPTS) {
+      startServer(port + 1, attempt + 1);
+      return;
+    }
+
+    // eslint-disable-next-line no-console
+    console.error("Failed to start portfolio server:", error.message);
+    process.exit(1);
+  });
+}
+
+startServer(START_PORT);

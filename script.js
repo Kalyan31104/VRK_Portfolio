@@ -258,7 +258,7 @@ projectToggles.forEach((button) => {
 if (downloadResumeBtn) {
   downloadResumeBtn.addEventListener("click", async () => {
     try {
-      const response = await fetch("assets/vuppu_Reddy_Kalyan_Resume.pdf.pdf?v=20260704", {
+      const response = await fetch("assets/vuppu_Reddy_Kalyan_Resume_20260704.pdf?v=20260704", {
         cache: "no-store"
       });
       if (!response.ok) {
@@ -269,7 +269,7 @@ if (downloadResumeBtn) {
       const fileUrl = URL.createObjectURL(blob);
       const tempLink = document.createElement("a");
       tempLink.href = fileUrl;
-      tempLink.download = "vuppu_Reddy_Kalyan_Resume.pdf.pdf";
+      tempLink.download = "vuppu_Reddy_Kalyan_Resume_20260704.pdf";
       document.body.appendChild(tempLink);
       tempLink.click();
       tempLink.remove();
